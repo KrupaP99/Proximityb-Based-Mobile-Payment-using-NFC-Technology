@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sanktest.mytestapp.PaymentStatusActivity">
+
+    <ImageView
+        android:id="@+id/statusImg"
+        android:src="@drawable/ic_error"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/paymentStatus"
+        android:text="PAYMENT FAILED"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/statusImg"/>
+
+    <TextView
+        android:id="@+id/status"
+        android:text="Your payment could not be processed"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:layout_marginTop="0dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/paymentStatus"/>
+
+    <Button
+        android:text="Ok"
+        android:id="@+id/okBtn"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dimens"
+        android:paddingLeft="60dp"
+        android:layout_gravity="center"
+        android:paddingRight="60dp"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="backToMain"/>
+
+
+</RelativeLayout>

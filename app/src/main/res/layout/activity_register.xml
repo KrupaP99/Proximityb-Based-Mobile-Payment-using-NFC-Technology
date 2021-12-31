@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/colorPrimary"
+    tools:context="com.sanktest.mytestapp.RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/regParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="REGISTER YOURSELF!"
+            android:textColor="#FFF"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <ScrollView
+            android:id="@+id/scrlView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/fn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="4dp"
+                    android:text="FirstName"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/fnval"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fn"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="First Name"
+                    android:textColor="#fff"
+                    android:textColorHint="#9E9E9E"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/ln"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fnval"
+                    android:paddingLeft="4dp"
+                    android:text="LastName"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/lnval"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ln"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="Last Name"
+                    android:textColor="#fff"
+                    android:textColorHint="#9E9E9E"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="4dp"
+                    android:text="Email"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fn"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="Email"
+                    android:textColor="#fff"
+                    android:textColorHint="#9E9E9E"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/un"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lnval"
+                    android:paddingLeft="4dp"
+                    android:text="UserName"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/unval"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/un"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="Username"
+                    android:textColor="#fff"
+                    android:textColorHint="#9E9E9E"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/unval"
+                    android:paddingLeft="4dp"
+                    android:text="Password"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/passval"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/pass"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textColor="#fff"
+                    android:textColorHint="#9E9E9E"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/mn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/passval"
+                    android:paddingLeft="4dp"
+                    android:text="Mobile Number"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/mnval"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mn"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="10 digit Mobile Number"
+                    android:inputType="phone"
+                    android:textColor="#fff"
+                    android:textColorHint="#9E9E9E"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tpin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mnval"
+                    android:paddingLeft="4dp"
+                    android:text="Transaction PIN"
+                    android:textAllCaps="true"
+                    android:textColor="#fff"
+                    android:textSize="12sp" />
+
+                <EditText
+                    android:id="@+id/tpinval"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tpin"
+                    android:layout_marginBottom="10dp"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="4 digit Pin"
+                    android:inputType="phone"
+                    android:textColor="#fff"
+                    android:textColorHint="#9E9E9E"
+                    android:textSize="16sp" />
+
+                <!--<TextView
+                    android:id="@+id/imei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/mnval"
+                    android:layout_marginBottom="10dp"
+                    android:text="IMEI No: "
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/model"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imei"
+                    android:layout_marginBottom="10dp"
+                    android:text="Model: "
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/os"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/model"
+                    android:layout_marginBottom="10dp"
+                    android:text="Android Version: "
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/lang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/os"
+                    android:layout_marginBottom="10dp"
+                    android:text="Language: "
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/manufacturer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lang"
+                    android:layout_marginBottom="10dp"
+                    android:text="Manufacturer: "
+                    android:textSize="18sp" />-->
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tpinval"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/dimens"
+                    android:onClick="submit"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="50dp"
+                    android:text="REGISTER"
+                    android:textColor="#fff"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:id="@+id/loginLink"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:text="ALREADY HAVE AN ACCOUNT?"
+                        android:textColor="#fff" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:onClick="logAccount"
+
+                        android:text=" LOGIN"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:text=" NOW."
+                        android:textColor="#fff" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

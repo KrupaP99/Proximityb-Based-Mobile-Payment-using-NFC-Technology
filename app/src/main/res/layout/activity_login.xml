@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sanktest.mytestapp.LoginActivity"
+    android:background="@color/colorPrimary"
+    android:elevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TAP"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:textSize="56sp"
+           android:typeface="serif"
+            android:layout_marginTop="40dp"/>
+        <TextView
+            android:id="@+id/unlogin"
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dp"
+            android:text="USERNAME"
+            android:textAllCaps="true"
+            android:textSize="12sp"
+            android:textColor="#fff" />
+
+        <EditText
+            android:id="@+id/usernval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/unlogin"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/colorAccent"
+            android:hint="Username"
+            android:textColor="#fff"
+            android:textColorHint="#9E9E9E"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/passlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/usernval"
+            android:textAllCaps="true"
+            android:paddingLeft="4dp"
+            android:text="Password"
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:layout_marginTop="5dp" />
+
+        <EditText
+            android:id="@+id/passlogval"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/passlogin"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="@color/colorAccent"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="#fff"
+            android:textColorHint="#9E9E9E"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:text="Login"
+            android:layout_below="@id/passlogval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:onClick="submitLogin"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:background="@drawable/dimens"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+
+            android:text="FORGOT PASSWORD?"/>
+        <!--<Button-->
+        <!--android:layout_marginTop="16dp"-->
+        <!--android:layout_below="@+id/orid"-->
+        <!--android:textAlignment="center"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:text="Create New Account"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:onClick="regAccount"/>-->
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+       android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="NOT YET REGISTERED?"
+            android:textColor="#fff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="regAccount"
+            android:text=" SIGN UP"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:text=" NOW."
+            android:textColor="#fff" />
+    </LinearLayout>
+    <!--<ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Scan Text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Scan Results:"
+        android:textAllCaps="false"
+        android:textStyle="normal|bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"/>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/results"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                tools:layout_constraintLeft_creator="1"
+                tools:layout_constraintRight_creator="1"
+                tools:layout_constraintTop_creator="1"/>
+        </LinearLayout>
+    </ScrollView>-->
+
+</RelativeLayout>

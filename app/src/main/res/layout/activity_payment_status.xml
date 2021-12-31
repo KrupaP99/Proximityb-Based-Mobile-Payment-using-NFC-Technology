@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sanktest.mytestapp.PaymentStatusActivity">
+
+    <ImageView
+        android:id="@+id/statusImg"
+        android:src="@drawable/ic_check_circle_black_24dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+
+    <TextView
+        android:id="@+id/paymentStatus"
+        android:text="PAYMENT SUCCESSFULL"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/statusImg"/>
+<LinearLayout
+    android:id="@+id/RsSymbol"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_below="@id/paymentStatus">
+    <!--<TextView
+        android:id="@+id/paymentRs"
+        android:text="\u20B9"
+        android:textSize="42sp"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />-->
+    <TextView
+        android:id="@+id/paymentAmt"
+        android:text="100"
+        android:textSize="90sp"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+    <TextView
+        android:id="@+id/status"
+        android:text="RECEIVED"
+        android:textSize="28sp"
+        android:textColor="#000"
+        android:layout_marginTop="-20dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RsSymbol"/>
+
+    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:id="@+id/transDetails"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/status"
+        android:layout_above="@+id/okBtn">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--<TextView
+            android:id="@+id/paymentTransactionId"
+            android:text="Transaction ID: 789523145526"
+            android:textSize="18sp"
+            android:paddingLeft="30dp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />-->
+
+        <TextView
+            android:id="@+id/paymentFrom"
+            android:text="FROM:-"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/paymentName"
+            android:text="Name:Bruce Wayne"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/paymentFrom"/>
+        <TextView
+            android:id="@+id/paymentSenderAcc"
+            android:text="A/C No.:157845625812"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/paymentName"/>
+
+        <TextView
+            android:id="@+id/paymentTo"
+            android:text="TO:-"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/paymentName"/>
+        <TextView
+            android:id="@+id/paymentRecName"
+            android:text="Name:Clark Kent"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/paymentTo"/>
+
+        <TextView
+            android:id="@+id/paymentReceiverAcc"
+            android:text="A/C No.:157468432315"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:paddingLeft="30dp"
+            android:layout_marginTop="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/paymentRecName"/>
+</LinearLayout>
+</ScrollView>
+    <Button
+        android:text="Ok"
+        android:id="@+id/okBtn"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dimens"
+        android:paddingLeft="60dp"
+        android:layout_gravity="center"
+        android:paddingRight="60dp"
+        android:textColor="#fff"
+        android:textSize="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="backToMain"/>
+
+
+</RelativeLayout>

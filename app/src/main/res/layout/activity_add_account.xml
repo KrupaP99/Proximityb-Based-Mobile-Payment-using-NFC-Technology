@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sanktest.mytestapp.AddAccountActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:background="#fff">
+
+
+        <TextView
+            android:id="@+id/ur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PAN Number"
+            android:paddingLeft="4dp"
+            android:textSize="12sp"
+            android:textColor="#000"
+            android:textAllCaps="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/urpanno"
+            android:layout_below="@+id/ur"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/colorAccent"
+            android:hint="Pan Number"
+            android:textColor="#000"
+            android:textColorHint="#9E9E9E"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/ur1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/urpanno"
+            android:text="Expiry Month"
+            android:paddingLeft="4dp"
+            android:textSize="12sp"
+            android:textColor="#000"
+            android:textAllCaps="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/urpanmth"
+            android:layout_below="@+id/ur1"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/colorAccent"
+            android:hint="Expiry Month"
+            android:textColor="#000"
+            android:textColorHint="#9E9E9E"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/ur2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/urpanmth"
+            android:text="Expiry Year"
+            android:paddingLeft="4dp"
+            android:textSize="12sp"
+            android:textColor="#000"
+            android:textAllCaps="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/urpanyr"
+            android:layout_below="@+id/ur2"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/colorAccent"
+            android:hint="Expiry Year"
+            android:textColor="#000"
+            android:textColorHint="#9E9E9E"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/ur3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/urpanyr"
+            android:text="CVV"
+            android:paddingLeft="4dp"
+            android:textSize="12sp"
+            android:textColor="#000"
+            android:textAllCaps="true"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/urpancvv"
+            android:layout_below="@+id/ur3"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/colorAccent"
+            android:hint="3 digit Number"
+            android:textColor="#000"
+            android:textColorHint="#9E9E9E"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/ur4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/urpancvv"
+            android:text="OTP"
+            android:paddingLeft="4dp"
+            android:textSize="12sp"
+            android:textColor="#000"
+            android:textAllCaps="true"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/urpanotp"
+            android:layout_below="@+id/ur4"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/colorAccent"
+            android:hint="One Time Password"
+            android:textColor="#000"
+            android:textColorHint="#9E9E9E"
+            android:textSize="16sp"/>
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/submit"
+            android:text="Add Card"
+            android:background="@drawable/dimens"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:paddingRight="50dp"
+            android:paddingLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/urpanotp"
+            android:layout_centerHorizontal="true"
+            android:onClick="addAccount"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
